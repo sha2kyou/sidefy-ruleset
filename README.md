@@ -16,8 +16,7 @@ sidefy-ruleset/
   ├── info.json        # Metadata for this ruleset collection
   └── <ruleset-name>/  # Example ruleset folder (optional, one or more)
       ├── info.json    # Metadata for this ruleset
-      ├── rules.sideql # SideQL rules for this ruleset
-      └── README.md    # Description and usage of this ruleset
+      ├── rules.sideql # SideQL rules for this rulesetruleset
 ```
 
 ### info.json (ruleset)
