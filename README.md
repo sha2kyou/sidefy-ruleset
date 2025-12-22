@@ -7,9 +7,36 @@ This repository is meant to:
 - Showcase **SideQL best practices** and example patterns
 - Serve as a **playground** for designing and iterating on rule logic
 
-## SideQL Syntax
+## 📁 File Structure
 
-SideQL is a small domain-specific language for defining event rules in Sidefy.
+```text
+sidefy-ruleset/
+  ├── README.md        # Documentation for this repository
+  ├── LICENSE          # License information
+  ├── info.json        # Metadata for this ruleset collection
+  └── <ruleset-name>/  # Example ruleset folder (optional, one or more)
+      ├── info.json    # Metadata for this ruleset
+      ├── rules.sideql # SideQL rules for this ruleset
+      └── README.md    # Description and usage of this ruleset
+```
+
+### info.json (ruleset)
+
+Each ruleset folder should contain an `info.json` file with the following structure:
+
+```json
+{
+  "name": "Tax & Duty Events",
+  "version": "0.1.0",
+  "author": "Sidefy Team"
+}
+```
+
+### rules.sideql
+
+Each ruleset folder should contain a `rules.sideql` file that defines event rules using SideQL syntax. SideQL is a small domain-specific language for defining event rules in Sidefy.
+
+`rules.sideql` can contain one or more rules in the following format:
 
 ```text
 IF <condition>
