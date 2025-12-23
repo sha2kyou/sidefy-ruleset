@@ -1,10 +1,10 @@
 # SideQL 1.1
 
-IF title CONTAINS_ANY ["apple", "nintendo", "tesla", "任天堂", "苹果", "特斯拉"]
-  AND title NOT_CONTAINS_ANY ["小米", "xiaomi", "华为", "huawei"]
-  AND origin NOT_CONTAINS "V2EX"
-THEN HIGHLIGHT ["特斯拉", "苹果", "任天堂", "nintendo", "apple", "tesla"] WITH "#20fefe"
+IF title CONTAINS_ANY ["apple", "nintendo", "tesla"]
+  AND title NOT_CONTAINS_ANY ["xiaomi", "huawei"]
+  AND origin NOT_CONTAINS "BBC"
+THEN HIGHLIGHT ["nintendo", "apple", "tesla"] WITH "#20fefe"
 SET color = "#fc7f08", symbol = "antenna.radiowaves.left.and.right"
 
-IF title CONTAINS_ANY ["早报", "极客早知道", "8点1氪", "氪星晚报"]
+IF title CONTAINS_ANY ["Morning News", "Morning Post"]
 THEN SET PINNED
