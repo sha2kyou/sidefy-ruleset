@@ -1,6 +1,6 @@
 {
   "name": "Sidefy Ruleset Repository",
-  "description": "Official Sidefy Ruleset Repository with shareable SideQL rule sets",
+  "description": "Official Sidefy Ruleset Repository with shareable SideScript rule sets",
   "build_version": "1",
   "maintainer": "Sidefy Team"
 }
