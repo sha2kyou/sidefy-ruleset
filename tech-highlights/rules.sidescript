@@ -2,12 +2,9 @@
 
 IF title CONTAINS_ANY ["apple", "nintendo", "tesla"]
   AND title NOT CONTAINS_ANY ["xiaomi", "huawei"]
-  AND origin NOT CONTAINS "BBC"
 THEN HIGHLIGHT ["nintendo", "apple", "tesla"] WITH "#20fefe"
 SET color = "#fc7f08", symbol = "antenna.radiowaves.left.and.right";
-
-IF title CONTAINS_ANY ["Morning News", "Morning Post"]
-THEN SET PINNED;
+SET PINNED;
 
 
 
